@@ -22,13 +22,14 @@ body, html, #root {
     top: 50px;
     left: 100px;
     width: auto;
-    height: 180px;
+    height: 120px;
 }
 
 .center-text p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 0.5;
   margin-bottom: 20px;
+  transform: translateY(-80px);
 }
 
 .nav-links {
