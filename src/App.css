@@ -1,0 +1,57 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('./assets/background.jpg') center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: auto;
+    height: 180px;
+}
+
+.center-text p {
+  font-size: 1.8rem;
+  line-height: 0.5;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.nav-links a {
+  font-family: 'Sergio', sans-serif;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  border-left: 2px solid transparent;
+  transition: border 0.2s ease, padding 0.2s ease;
+}
+
+.nav-links a:hover {
+  border-left: 2px solid white;
+  padding-left: 14px;
+}
