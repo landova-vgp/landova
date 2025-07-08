@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/landova/static/css/main.511b39df.css",
-    "main.js": "/landova/static/js/main.92464b68.js",
+    "main.css": "/landova/static/css/main.447b7f30.css",
+    "main.js": "/landova/static/js/main.9bb0600c.js",
     "static/media/background.png": "/landova/static/media/background.dc8c1187c836cb435377.png",
+    "static/media/project-1.png": "/landova/static/media/project-1.f516bd0c1ad73a707aa2.png",
     "static/media/logo.png": "/landova/static/media/logo.591eb592fc4bb75f1e47.png",
     "index.html": "/landova/index.html",
-    "main.511b39df.css.map": "/landova/static/css/main.511b39df.css.map",
-    "main.92464b68.js.map": "/landova/static/js/main.92464b68.js.map"
+    "main.447b7f30.css.map": "/landova/static/css/main.447b7f30.css.map",
+    "main.9bb0600c.js.map": "/landova/static/js/main.9bb0600c.js.map"
   },
   "entrypoints": [
-    "static/css/main.511b39df.css",
-    "static/js/main.92464b68.js"
+    "static/css/main.447b7f30.css",
+    "static/js/main.9bb0600c.js"
   ]
 }
