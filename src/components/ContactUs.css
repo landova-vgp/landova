@@ -75,3 +75,54 @@
     margin: 204px 0 0;
     line-height: 1.8;
 }
+
+@media only screen and (max-width: 950px) {
+    .site-foot__inset {
+        padding: 48px 0;
+    }
+
+    h6 {
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    .site-foot__email {
+        margin-top: 24px;
+        font-size: 28px;
+    }
+
+    .site-foot__cols {
+        margin-top: 36px;
+    }
+
+    .site-foot__cols__item {
+        padding-top: 24px;
+    }
+
+    .site-foot__note {
+        float: none;
+        margin-top: 32px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .site-foot__cols {
+        width: auto;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .site-foot__cols__item:first-child {
+        margin-top: 0;
+    }
+
+    .site-foot__cols__item {
+        display: block;
+        margin-top: 24px;
+    }
+
+    .site-foot__cols__item b {
+        margin-bottom: 12px;
+    }
+}
