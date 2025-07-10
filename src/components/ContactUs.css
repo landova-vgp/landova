@@ -1,0 +1,77 @@
+.site-foot {
+    overflow: hidden;
+    padding: 0 4%;
+    border-top: 1px solid #2d2e2d;
+}
+
+.site-foot__inset {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 154px 0 150px;
+    font-size: 14px;
+    color: #c6c6c6;
+}
+
+.site-foot__title {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .24em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.55;
+    font-size: 16px;
+}
+
+.site-foot__email {
+    display: inline-block;
+    margin-top: 72px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 37px;
+    color: #fff;
+}
+
+.site-foot__email:hover {
+  text-decoration: underline;
+}
+
+.site-foot__cols {
+    width: calc(100% + 120px);
+    display: table;
+    table-layout: fixed;
+    margin: 90px 0 0 -60px;
+    border-spacing: 60px 0;
+}
+
+.site-foot__cols__item {
+    display: table-cell;
+    margin: 0;
+    padding-top: 75px;
+    border-top: 1px solid #2d2e2d;
+    line-height: 1.7;
+    color: #fff;
+    font-style: normal; 
+}
+
+.site-foot__cols__item b {
+    display: block;
+    margin-bottom: 25px;
+    line-height: inherit;
+    font-weight: 700;
+}
+
+.site-foot__cols__item span {
+    color: #c6c6c6;
+}
+
+.site-foot__note {
+    float: left;
+    margin: 204px 0 0;
+    line-height: 1.8;
+}
+
+.site-foot__copy {
+    float: right;
+    margin: 204px 0 0;
+    line-height: 1.8;
+}

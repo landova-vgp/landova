@@ -6,7 +6,7 @@ function Projects() {
     <div className="projects-section" id="projects">
       <h2 className="projects-title">Projects</h2>
       <article className="project-card">
-        <a href="/project-detail" className="project-link">
+        <a href="/project/001" className="project-link">
           <div className="project-image">
             <img src={projectImage} alt="Project Thumbnail" />
           </div>

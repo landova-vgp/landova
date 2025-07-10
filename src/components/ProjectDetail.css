@@ -1,0 +1,142 @@
+.project-detail-page {
+  color: white;
+  background-color: black;
+}
+
+/* HERO SECTION */
+.detail-project__hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/project-001.jpeg') center center / cover no-repeat;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: auto;
+  height: 180px;
+}
+
+.detail-project__hero-text {
+  position: absolute;
+  left: 4%;
+  bottom: 80px;
+  right: 4%;
+  z-index: 10;
+  font-size: 14px;
+  color: #777;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.detail-project__hero-text p {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.detail-project__hero-text .hero-line-1 {
+    margin: 0 0 45px;
+    letter-spacing: .16em;
+    font-weight: 700;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.8;
+}
+
+.detail-project__hero-text .hero-line-2 {
+    margin: 0;
+    font-weight: 700;
+    color: #777;
+    line-height: 1.25;
+    font-size: 48px;
+}
+
+.detail-project__hero-text .hero-line-3 {
+    margin: 4px 0 0;
+    line-height: 1.8;
+}
+
+/* MAIN CONTENT BELOW HERO */
+.detail-project__content {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 168px 4%;
+  overflow: hidden;
+}
+
+.detail-project__content h3 {
+  line-height: 1.4;
+  font-size: 24px;
+  margin: 54px 0 24px;
+  font-weight: 400;
+}
+
+.detail-project__content p {
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.detail-project__col--align-left {
+  width: 305px;
+  float: left;
+}
+
+.detail-project__col--align-right {
+  width: calc(100% - 368px);
+  float: right;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .detail-project__hero-text {
+      font-size: 12px;
+    }
+
+  .detail-project__hero-text p {
+      font-size: 1.2rem;
+    }
+
+  .detail-project__hero-text .hero-line-1 {
+      font-size: 14px;
+    }
+
+   .detail-project__hero-text .hero-line-2 {
+      font-size: 44px;
+    }
+
+  .detail-project__col--align-left,
+  .detail-project__col--align-right {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .detail-project__content {
+    padding: 80px 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+        left: 70px;
+    } 
+  .detail-project__hero-text {
+      font-size: 10px;
+    }
+
+  .detail-project__hero-text p {
+      font-size: 0.9rem;
+    }
+
+  .detail-project__hero-text .hero-line-1 {
+      font-size: 12px;
+    }
+
+   .detail-project__hero-text .hero-line-2 {
+      font-size: 30px;
+    }
+}
