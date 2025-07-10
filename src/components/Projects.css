@@ -13,7 +13,6 @@
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 70px;
-  border-bottom: 1px solid #2d2e2d;
 }
 
 .project-card {
@@ -111,10 +110,6 @@
   .projects-section {
     padding: 48px 4%;
     margin-bottom: 50px;
-  }
-
-  .projects-title {
-    margin-bottom: 24px;
   }
 }
 
