@@ -1,28 +1,28 @@
 /* src/components/Projects.css */
 .projects-section {
-  width: 100%;
-  background-color: #f9f9f9;
-  padding: 80px 20px;
-  text-align: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 140px 0;
 }
 
 .projects-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #333;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.55;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 70px;
 }
 
 .project-card {
   max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+  margin: 0 0 -56px;
 }
 
 .project-link {
   display: block;
-  background: white;
   text-decoration: none;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
@@ -43,10 +43,15 @@
   transform: translateX(10px);
 }
 
+.project-link:hover .project-desc {
+  color: #fff;
+}
+
 /* Image */
 .project-image {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 17px;
 }
 
 .project-image img {
@@ -59,32 +64,44 @@
 
 /* Title */
 .project-title {
-  font-size: 1.2rem;
-  margin: 15px 20px 10px;
-  color: #111;
+  line-height: 1.55;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 32px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
   transition: text-decoration 0.3s;
 }
 
 .project-title small {
-  display: block;
   color: #777;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-decoration: none !important;
 }
 
 /* Description */
 .project-desc {
-  margin: 0 20px 20px;
-  font-size: 1rem;
-  color: #555;
+  overflow: hidden;
+  margin: 3px 32px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  color: #777;
+  line-height: 1.8;
 }
 
 /* Arrow */
 .project-arrow {
-  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+
   text-align: right;
-  font-size: 1.5rem;
-  color: #2c6f2e;
+  color: #ffffff;
   padding: 0 20px 20px;
   transition: transform 0.3s ease;
 }
