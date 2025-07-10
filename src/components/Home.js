@@ -30,20 +30,23 @@ export default function Home() {
           <p>“My Father Bought Land from VGP… Now, I’m Buying for My Son.”</p>
           <p>70 Years of Trust. Generations of Happy Homeowners.</p>
         </div>
-        <p className="slider-label">OMR - GST INBETWEEN KEELUR</p>
 
-        <div className="slider-arrows">
-          <button className="arrow-btn" disabled>
-            <svg width="9" height="13" viewBox="0 0 9 13">
-              <path d="M8 1L2 6.5L8 12" stroke="white" strokeWidth="2" fill="none" />
-            </svg>
-          </button>
+        <div className="slider-container">
+          <p className="slider-label">OMR - GST INBETWEEN KEELUR</p>
 
-          <button className="arrow-btn" disabled>
-            <svg width="9" height="13" viewBox="0 0 9 13">
-              <path d="M1 1L7 6.5L1 12" stroke="white" strokeWidth="2" fill="none" />
-            </svg>
-          </button>
+          <div className="slider-arrows">
+            <button className="arrow-btn" disabled>
+              <svg width="9" height="13" viewBox="0 0 9 13">
+                <path d="M8 1L2 6.5L8 12" stroke="white" strokeWidth="2" fill="none" />
+              </svg>
+            </button>
+
+            <button className="arrow-btn" disabled>
+              <svg width="9" height="13" viewBox="0 0 9 13">
+                <path d="M1 1L7 6.5L1 12" stroke="white" strokeWidth="2" fill="none" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
