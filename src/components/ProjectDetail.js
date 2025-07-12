@@ -76,6 +76,12 @@ const ProjectDetail = () => {
             </LightGallery>
         </div>
       </section>
+
+      <div className='footer'>
+        <p className="footer-text">
+          © 2025 Landova Realty | All rights reserved
+        </p>
+      </div>
     </div>
   );
 };
