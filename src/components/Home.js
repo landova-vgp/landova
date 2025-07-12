@@ -3,12 +3,19 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/logo.png';
 import Projects from '../components/Projects';
+import AboutUs from '../components/AboutUs';
 import ContactUs from './ContactUs';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null); 
+
+  const scrollToAbout = () => {
+    setMenuOpen(false);
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const scrollToProjects = () => {
     setMenuOpen(false);
@@ -50,7 +57,7 @@ export default function Home() {
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <a href="#">About Us</a>
+          <a onClick={scrollToAbout}>About Us</a>
           <a onClick={scrollToProjects}>Projects</a>
           <a onClick={scrollToContact}>Contact</a>
         </div>
@@ -64,6 +71,10 @@ export default function Home() {
 
       <section ref={projectsRef}>
         <Projects />
+      </section>
+
+      <section ref={aboutRef}>
+        <AboutUs />
       </section>
 
       <section ref={contactRef}>

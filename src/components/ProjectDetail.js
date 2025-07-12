@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import ProjectContent from './ProjectContent';
 import './ProjectDetail.css';
 
 import LightGallery from 'lightgallery/react';
@@ -46,8 +47,7 @@ const ProjectDetail = () => {
       {/* TWO COLUMN SECTION */}
       <section className="detail-project__content">
         <div className="detail-project__col--align-left">
-          <h3>Project ID: {id}</h3>
-          <p>This is the left column with text content. You can add descriptions, features, and highlights here.</p>
+           <ProjectContent />
         </div>
 
         <div className="detail-project__col--align-right">

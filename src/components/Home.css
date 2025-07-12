@@ -82,11 +82,9 @@
 }
 
 .nav-links a {
-  font-family: 'Sergio', sans-serif;
   font-size: 20px;
   color: white;
   text-decoration: none;
-  padding-left: 10px;
   transition: padding 0.2s ease;
 }
 
@@ -107,42 +105,42 @@
   .slider-label {
     position: absolute;
     bottom: 20px;
-    font-size: 10px;
+    left: 50px;
+    font-size: 14px;
   }
 
   .slider-arrows {
     display: flex;
     position: absolute;
-    gap: 116px;
+    gap: 600px;
     bottom: 20px;
+    left: 50px;
   }
 
   .slider-arrows .arrow-btn {
     margin: 0 30px;
   }
 
-  .logo {
-    top: 30px;
-    left: 20px;
-    height: 80px;
-  }
-
-  .center-text p {
-    font-size: 0.9rem;
-    line-height: 1.2;
-    transform: translateY(-60px);
-    padding: 0 20px;
+ .logo {
+    top: 20px !important;
+    left: 20px !important;
+    height: 60px !important;
   }
 
   .nav-links {
-    bottom: 40px;
+    position: absolute;
+    bottom: 80px;
     left: 20px;
-    gap: 10px;
+    gap: 20px;
   }
 
   .nav-links a {
-    font-size: 0.75rem;
-    padding-left: 8px;
+    font-size: 1rem;
+    padding-left: 4px;
+  }
+
+  .center-text p {
+    transform: translateY(-40px); /* adjust if content overlaps */
   }
 
   .nav-links a:hover {
@@ -172,7 +170,7 @@
 
 @media (max-width: 480px) {
   .center-text p {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     line-height: 0.5;
     transform: translateY(-70px);
   }
@@ -207,5 +205,21 @@
   .nav-links a:hover {
     padding-left: 0;
     text-decoration: underline;
+  }
+
+  .slider-label {
+    position: absolute;
+    bottom: 15px;
+    left: 70px;
+    font-size: 14px;
+    width: max-content;
+  }
+
+  .slider-arrows {
+    display: flex;
+    position: absolute;
+    gap: 200px;
+    bottom: 20px;
+    left: 50px;
   }
 }

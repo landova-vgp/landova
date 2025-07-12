@@ -13,27 +13,23 @@ const ContactUs = () => {
 
         <div className="site-foot__cols">
           <address className="site-foot__cols__item">
-            <b>Landova Realty Pvt Ltd</b>
-            <span>Identification No.:</span> 123 45 678<br />
-            <span>GST number:</span> ABCDEFGHIJKLMN<br />
-            Address to be added.
+            <b>Corporate Office</b>
+            VGP Square, Dharmaraja Koil Street,<br />
+            Saidapet, Chennai – 600015.<br />
+            +91 98410 57957
+          </address>
+
+          {/* <address className="site-foot__cols__item">
+            
           </address>
 
           <address className="site-foot__cols__item">
-            <b>Chennai Office</b>
-            Address to be added.<br />
-            +91 99999 99999
-          </address>
-
-          <address className="site-foot__cols__item">
-            <b>Branch Office</b>
-            Address to be added.<br />
-            +91 00000 00000
-          </address>
+            
+          </address> */}
         </div>
 
         <p className="site-foot__note">
-          Company is registered under the Ministry of Corporate Affairs, India.
+          
         </p>
 
         <p className="site-foot__copy">

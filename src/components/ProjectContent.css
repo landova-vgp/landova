@@ -1,0 +1,27 @@
+.detail-content {
+    margin-top: 0;
+}
+
+.detail-content h3 {
+    margin-top: 20px !important;
+    line-height: 1.4;
+    font-size: 24px;
+    margin: 54px 0 24px;
+    transform: rotate(.03deg);
+    font-weight: 400;
+}
+
+.detail-content p {
+    margin-bottom: 24px;
+    line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0; 
+  font-size: 14px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
