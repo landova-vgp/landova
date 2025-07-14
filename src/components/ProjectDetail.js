@@ -73,18 +73,18 @@ const ProjectDetail = () => {
               <div className="desktop-links">
                 <Link to="/" onMouseEnter={() => setHoveredItem('home')} onClick={() => setMenuOpen(false)}>Home</Link>
                 <Link to="/#projects" onMouseEnter={() => setHoveredItem('projects')} onClick={() => setMenuOpen(false)}>Projects</Link>
-                                <Link to="/#about" onMouseEnter={() => setHoveredItem('about')} onClick={() => setMenuOpen(false)}>About Us</Link>
+                <Link to="/#about" onMouseEnter={() => setHoveredItem('about')} onClick={() => setMenuOpen(false)}>About Us</Link>
                 <Link to="/#contact" onMouseEnter={() => setHoveredItem('contact')} onClick={() => setMenuOpen(false)}>Contact</Link>
               </div>
               <div className="desktop-contact">
                 {hoveredItem === 'home' && (
                   <span className="contact-motto">Back to the beginning…<br /><b>…our home</b></span>
                 )}
-                {hoveredItem === 'about' && (
-                  <span className="contact-motto">Dedicated to the pursuit of simplicity…<br /><b>…our team</b></span>
-                )}
                 {hoveredItem === 'projects' && (
                   <span className="contact-motto">Selected projects…<br /><b>…our works</b></span>
+                )}
+                {hoveredItem === 'about' && (
+                  <span className="contact-motto">Dedicated to the pursuit of simplicity…<br /><b>…our team</b></span>
                 )}
                 {hoveredItem === 'contact' && (
                   <span className="contact-motto">Get in touch…<br /><b>…our contact</b></span>
@@ -97,6 +97,7 @@ const ProjectDetail = () => {
         {/* Mobile/Tablet Menu */}
         <div className={`menu-overlay ${menuOpen ? 'open' : ''}`}>
           <div className="menu-links">
+            <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
             <Link to="/#about" onClick={() => setMenuOpen(false)}>About Us</Link>
             <Link to="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>

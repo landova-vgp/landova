@@ -113,17 +113,17 @@ useEffect(() => {
               >
                 Home
               </a>
-               <a
-                onClick={scrollToAbout}
-                onMouseEnter={() => setHoveredItem('about')}
-              >
-                About Us
-              </a>
               <a
                 onClick={scrollToProjects}
                 onMouseEnter={() => setHoveredItem('projects')}
               >
                 Projects
+              </a>
+              <a
+                onClick={scrollToAbout}
+                onMouseEnter={() => setHoveredItem('about')}
+              >
+                About Us
               </a>
               <a
                 onClick={scrollToContact}
@@ -139,16 +139,16 @@ useEffect(() => {
                   <b>…our home</b>
                 </span>
               )}
-              {hoveredItem === 'about' && (
-                <span className="contact-motto">
-                  Dedicated to the pursuit of simplicity…<br />
-                  <b>…our team</b>
-                </span>
-              )}
               {hoveredItem === 'projects' && (
                 <span className="contact-motto">
                   Selected projects…<br />
                   <b>…our works</b>
+                </span>
+              )}
+              {hoveredItem === 'about' && (
+                <span className="contact-motto">
+                  Dedicated to the pursuit of simplicity…<br />
+                  <b>…our team</b>
                 </span>
               )}
               {hoveredItem === 'contact' && (
@@ -166,8 +166,9 @@ useEffect(() => {
         {/* Fullscreen modal for mobile/tablet */}
         <div className={`menu-overlay ${menuOpen ? 'open' : ''}`}>
           <div className="menu-links">
-            <a onClick={scrollToAbout}>About Us</a>
+            <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
             <a onClick={scrollToProjects}>Projects</a>
+            <a onClick={scrollToAbout}>About Us</a>
             <a onClick={scrollToContact}>Contact</a>
           </div>
         </div>
