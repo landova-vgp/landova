@@ -30,9 +30,22 @@ export default function Home() {
   return (
     <main>
       <section className="homepage">
-       <Link to="/">
-          <img src={logo} alt="Logo" className="logo" />
+        <div className="top-bar">
+        <Link to="/">
+            <img src={logo} alt="Logo" className="logo" />
         </Link>
+
+        <div className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
+          <span className={`menu-label ${menuOpen ? 'visible' : 'hidden'}`}>MENU</span>
+          
+          <i className="icon">
+              <svg width="18" height="14" viewBox="0 0 18 14">
+                <use href="#svg-burger"></use>
+              </svg>
+            </i>
+        </div>
+        </div>
+        
         <div className="center-text">
           <p>“My Father Bought Land from VGP… Now, I’m Buying for My Son.”</p>
           <p>70 Years of Trust. Generations of Happy Homeowners.</p>
@@ -56,17 +69,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+        {/* Side nav for desktop */}
+        <div className="nav-links">
           <a onClick={scrollToAbout}>About Us</a>
           <a onClick={scrollToProjects}>Projects</a>
           <a onClick={scrollToContact}>Contact</a>
         </div>
 
-        <div className="hamburger" onClick={() => setMenuOpen(prev => !prev)}>
-          <div className="bar" />
-          <div className="bar" />
-          <div className="bar" />
+        {/* Fullscreen modal for mobile/tablet */}
+        <div className={`menu-overlay ${menuOpen ? 'open' : ''}`}>
+          <div className="menu-links">
+            <a onClick={scrollToAbout}>About Us</a>
+            <a onClick={scrollToProjects}>Projects</a>
+            <a onClick={scrollToContact}>Contact</a>
+          </div>
         </div>
+
+        
       </section>
 
       <section ref={projectsRef}>
