@@ -41,7 +41,7 @@
     margin: 0 0 45px;
     letter-spacing: .16em;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     line-height: 1.8;
 }
@@ -57,6 +57,8 @@
 .detail-project__hero-text .hero-line-3 {
     margin: 4px 0 0;
     line-height: 1.8;
+    color: #c6c6c6;
+    font-size: 16px;
 }
 
 /* MAIN CONTENT BELOW HERO */
@@ -140,8 +142,24 @@
 }
 
 @media (max-width: 768px) {
+ .logo {
+    left: 30px !important;
+    top: 34px !important;
+    height: 100px !important;
+  }
+
+  .detail-project__hero {
+        height: 60vh;
+  } 
   .detail-project__hero-text {
-      font-size: 12px;
+        font-size: 12px;
+        left: 11%;
+        top: 57%;
+        right: 4%;
+        bottom: auto;
+        transform: translateY(-50%);
+        text-align: center;
+        max-width: 76%;
     }
 
   .detail-project__hero-text p {
@@ -149,12 +167,25 @@
     }
 
   .detail-project__hero-text .hero-line-1 {
-      font-size: 14px;
+      font-size: 15px;
+      margin-bottom: 12px;
     }
 
    .detail-project__hero-text .hero-line-2 {
-      font-size: 44px;
+      font-size: 32px;
+      line-height: 1.35;
+      transform: rotate(.03deg);
     }
+
+  .detail-project__hero-text .hero-line-3 {
+      margin-top: 10px;
+      margin: 4px 0 0;
+      line-height: 1.8;
+      display: inline-block;
+      margin-right: 14px;
+      color: #c6c6c6;
+      font-size: 15px;
+  }
 
   .detail-project__col--align-left,
   .detail-project__col--align-right {
@@ -175,7 +206,7 @@
 @media (max-width: 1024px) {
  .logo {
     left: 30px !important;
-    top: -18px !important;
+    top: 34px !important;
     height: 100px !important;
   }
   .footer-text {
@@ -186,12 +217,16 @@
 @media (max-width: 480px) {
   .logo {
       left: 7px !important;
-      top: -20px !important;
+      top: 34px !important;
       height: 65px !important;
    }
 
   .detail-project__hero-text {
       font-size: 10px;
+      left: 4%;
+      top: 60%;
+      right: 4%;
+      bottom: auto;
     }
 
   .detail-project__hero-text p {
@@ -203,7 +238,12 @@
     }
 
    .detail-project__hero-text .hero-line-2 {
-      font-size: 30px;
+      font-size: 26px;
+      line-height: 1.35;
+    }
+
+    .detail-project__hero-text .hero-line-3 {
+        font-size: 13px;
     }
 
     .footer {

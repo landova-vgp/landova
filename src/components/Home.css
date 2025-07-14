@@ -12,7 +12,7 @@
 
 .top-bar {
   position: absolute;
-  top: 55px;
+  top: 0px;
   left: 10px;
   right: 0.5%;
   padding: 0 20px;
@@ -145,6 +145,7 @@
     flex-direction: row;
     gap: 10px;
     z-index: 11001; 
+    margin-top: 55px;
   }
 
   .hamburger span {
@@ -248,6 +249,7 @@
     flex-direction: row;
     gap: 10px;
     z-index: 11001; 
+    margin-top: 55px;
   }
 
   .hamburger span {

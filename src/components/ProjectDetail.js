@@ -49,7 +49,7 @@ const ProjectDetail = () => {
         </Link>
         <div className="detail-project__hero-text">
           <p className="hero-line-1">117 Premium Plots Sizes: 636 - 2830 Sq. ft Starting from 16 Lakhs</p>
-          <p className="hero-line-2">Build Your Home Where IT meets Connectivity - OMR to GST</p>
+          <h2 className="hero-line-2">Build Your Home Where IT meets Connectivity - OMR to GST</h2>
           <p className="hero-line-3">(Bank Loan Facility Available)</p>
         </div>
       </section>
