@@ -6,7 +6,7 @@ import ProjectDetail from './components/ProjectDetail';
 
 function App() {
    return (
-    <HashRouter basename="/landova">
+    <HashRouter>
        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
