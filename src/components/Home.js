@@ -98,8 +98,8 @@ useEffect(() => {
 
         {/* Side nav for desktop */}
         <div className="nav-links">
-          <a onClick={scrollToAbout}>About Us</a>
           <a onClick={scrollToProjects}>Projects</a>
+          <a onClick={scrollToAbout}>About Us</a>
           <a onClick={scrollToContact}>Contact</a>
         </div>
 
