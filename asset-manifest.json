@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landova/static/css/main.74b9f475.css",
-    "main.js": "/landova/static/js/main.d44f1a10.js",
+    "main.css": "/landova/static/css/main.60599cdc.css",
+    "main.js": "/landova/static/js/main.7ffd09b9.js",
     "static/media/DSC03727.jpg": "/landova/static/media/DSC03727.4f85153167302205acad.jpg",
     "static/media/DSC03731.jpg": "/landova/static/media/DSC03731.bc683de827ee56f57f8e.jpg",
     "static/media/DSC03740.jpg": "/landova/static/media/DSC03740.135fd7290bdbb4073470.jpg",
@@ -20,11 +20,11 @@
     "static/media/lg.ttf?io9a6k": "/landova/static/media/lg.747d038541bfc6bb8ea9.ttf",
     "static/media/lg.woff2?io9a6k": "/landova/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/landova/index.html",
-    "main.74b9f475.css.map": "/landova/static/css/main.74b9f475.css.map",
-    "main.d44f1a10.js.map": "/landova/static/js/main.d44f1a10.js.map"
+    "main.60599cdc.css.map": "/landova/static/css/main.60599cdc.css.map",
+    "main.7ffd09b9.js.map": "/landova/static/js/main.7ffd09b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.74b9f475.css",
-    "static/js/main.d44f1a10.js"
+    "static/css/main.60599cdc.css",
+    "static/js/main.7ffd09b9.js"
   ]
 }
