@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useRef, useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/logo.png';
 import Projects from '../components/Projects';
@@ -10,9 +10,34 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState('');
 
+  const location = useLocation();
+
+useEffect(() => {
+  const hash = location.hash;
+  if (hash) {
+    // Delay scrolling to allow DOM to finish rendering
+    setTimeout(() => {
+      if (hash === '#about') {
+        scrollWithOffset(aboutRef);
+      } else if (hash === '#projects') {
+        scrollWithOffset(projectsRef);
+      } else if (hash === '#contact') {
+        scrollWithOffset(contactRef);
+      }
+    }, 100); // small delay
+  }
+}, [location.hash]);
+
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null); 
+
+   const scrollWithOffset = (ref) => {
+    if (ref.current) {
+      const y = ref.current.getBoundingClientRect().top + window.pageYOffset - 100; // adjust -100 as needed
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
 
   const scrollToAbout = () => {
     setMenuOpen(false);

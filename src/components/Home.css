@@ -146,6 +146,7 @@
     gap: 10px;
     z-index: 11001; 
     margin-top: 55px;
+    cursor: pointer;
   }
 
   .hamburger span {
