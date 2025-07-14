@@ -9,7 +9,7 @@ function Projects() {
 
       <div className="project-grid">
         <article className="project-card">
-          <Link className="project-link" onClick={() => window.location.href = `/landova/project/001`}>
+          <Link to="/project/001" className="project-link">
             <div className="project-image">
               <img src={projectImage} alt="Project Thumbnail" />
             </div>
