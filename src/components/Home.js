@@ -8,6 +8,8 @@ import ContactUs from './ContactUs';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState('');
+
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null); 
@@ -75,6 +77,66 @@ export default function Home() {
           <a onClick={scrollToProjects}>Projects</a>
           <a onClick={scrollToContact}>Contact</a>
         </div>
+
+        {menuOpen && window.innerWidth >= 1024 && (
+        <div className="desktop-menu-modal">
+          <nav className="desktop-nav">
+            <div className="desktop-links">
+              <a
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                onMouseEnter={() => setHoveredItem('home')}
+              >
+                Home
+              </a>
+               <a
+                onClick={scrollToAbout}
+                onMouseEnter={() => setHoveredItem('about')}
+              >
+                About Us
+              </a>
+              <a
+                onClick={scrollToProjects}
+                onMouseEnter={() => setHoveredItem('projects')}
+              >
+                Projects
+              </a>
+              <a
+                onClick={scrollToContact}
+                onMouseEnter={() => setHoveredItem('contact')}
+              >
+                Contact
+              </a>
+            </div>
+            <div className="desktop-contact">
+              {hoveredItem === 'home' && (
+                <span className="contact-motto">
+                  Back to the beginning…<br />
+                  <b>…our home</b>
+                </span>
+              )}
+              {hoveredItem === 'about' && (
+                <span className="contact-motto">
+                  Dedicated to the pursuit of simplicity…<br />
+                  <b>…our team</b>
+                </span>
+              )}
+              {hoveredItem === 'projects' && (
+                <span className="contact-motto">
+                  Selected projects…<br />
+                  <b>…our works</b>
+                </span>
+              )}
+              {hoveredItem === 'contact' && (
+                <span className="contact-motto">
+                  Get in touch…<br />
+                  <b>…our contact</b>
+                </span>
+              )}
+            </div>
+
+          </nav>
+        </div>
+      )}
 
         {/* Fullscreen modal for mobile/tablet */}
         <div className={`menu-overlay ${menuOpen ? 'open' : ''}`}>

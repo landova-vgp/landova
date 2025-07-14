@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import ContactUs from './ContactUs';
 import ProjectContent from './ProjectContent';
 import './ProjectDetail.css';
 
@@ -29,6 +30,15 @@ const photos = importAllPhotos();
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      setTimeout(() => setLoading(false), 1200); 
+  }, []);
+
+  if (loading) {
+    return <div className="spinner" />;
+  }
 
   return (
     <div className="project-detail-page">
@@ -48,18 +58,6 @@ const ProjectDetail = () => {
       <section className="detail-project__content">
         <div className="detail-project__col--align-left">
            <ProjectContent />
-
-           <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.090785762338!2d80.1801303740302!3d12.74104278756895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f592476fdc01%3A0x7e9913b0f6e3ce3!2sThiruporur%2C%20Tamil%20Nadu%20603110!5e0!3m2!1sen!2sin!4v1720771690642!5m2!1sen!2sin"
-              width="100%"
-              height="300"
-              style={{ border: 0, borderRadius: "8px", marginTop: "40px" }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Map of Thiruporur"
-            />
-
         </div>
 
         <div className="detail-project__col--align-right">
@@ -89,13 +87,20 @@ const ProjectDetail = () => {
         </div>
       </section>
 
-
-
-      <div className='footer'>
-        <p className="footer-text">
-          © 2025 Landova Realty | All rights reserved
-        </p>
+      <div className="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.090785762338!2d80.1801303740302!3d12.74104278756895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f592476fdc01%3A0x7e9913b0f6e3ce3!2sThiruporur%2C%20Tamil%20Nadu%20603110!5e0!3m2!1sen!2sin!4v1720771690642!5m2!1sen!2sin"
+          width="100%"
+          height="500"
+          style={{ border: 0, borderRadius: "8px", marginTop: "40px" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Map of Thiruporur"
+        />
       </div>
+
+      <ContactUs />
     </div>
   );
 };

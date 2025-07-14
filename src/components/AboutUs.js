@@ -8,8 +8,8 @@ const AboutUs = () => {
         <header className="site-section__head" style={{ marginBottom: 0 }}>
             <h2 className="site-section__title --like-h6">VGP – LANDOVA</h2>
             <p className="site-section__excerpt" style={{ paddingBottom: '16px' }}>
-            LANDOVA is a new sub-brand from VGP, a real estate pioneer<br />
-            with more than <strong>67 years of experience and trust</strong>.
+            LANDOVA is a new sub-brand from VGP, a real estate pioneer with more than 
+            <strong> 67 years of experience and trust</strong>.
             </p>
 
             <p className="site-section__subhead"><strong>What does LANDOVA mean?</strong></p>

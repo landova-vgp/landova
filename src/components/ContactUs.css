@@ -8,7 +8,7 @@
     max-width: 1160px;
     margin: 0 auto;
     padding: 154px 0 150px;
-    font-size: 14px;
+    font-size: 13.5px;
     color: #c6c6c6;
 }
 
@@ -19,7 +19,7 @@
     font-weight: 700;
     color: #fff;
     line-height: 1.55;
-    font-size: 16px;
+    font-size: 15.5px;
 }
 
 .site-foot__email {
@@ -32,7 +32,7 @@
 }
 
 .site-foot__email:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .site-foot__cols {
@@ -47,10 +47,13 @@
     display: table-cell;
     margin: 0;
     padding-top: 75px;
-    border-top: 1px solid #2d2e2d;
     line-height: 1.7;
-    color: #fff;
+    color: #c6c6c6;
     font-style: normal; 
+}
+
+.site-foot__cols__item:first-child {
+    border-top: 1px solid #2d2e2d;
 }
 
 .site-foot__cols__item b {
@@ -58,6 +61,7 @@
     margin-bottom: 25px;
     line-height: inherit;
     font-weight: 700;
+    color: #fff;
 }
 
 .site-foot__cols__item span {
@@ -76,7 +80,37 @@
     line-height: 1.8;
 }
 
+@media only screen and (max-width: 1024px) {
+    .site-foot__inset {
+        padding: 100px 0;
+    } 
+
+    .site-foot__email {
+        margin-top: 36px;
+    }
+
+    .site-foot__cols {
+        margin-top: 62px;
+    }
+    
+    .site-foot__cols__item {
+        padding-top: 42px;
+    }
+
+    .site-foot__copy {
+        float: none;
+        margin-top: 42px;
+        line-height: 1.8;
+    }
+}
+
 @media only screen and (max-width: 950px) {
+    .site-foot__title {
+        line-height: 1.6;
+        font-size: 13.5px;
+        font-weight: 780;
+    }
+
     .site-foot__inset {
         padding: 48px 0;
     }

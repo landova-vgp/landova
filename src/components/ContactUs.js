@@ -19,13 +19,13 @@ const ContactUs = () => {
             +91 98410 57957
           </address>
 
-          {/* <address className="site-foot__cols__item">
+          <address className="site-foot__cols__item">
             
           </address>
 
           <address className="site-foot__cols__item">
             
-          </address> */}
+          </address>
         </div>
 
         <p className="site-foot__note">

@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter basename="/landova">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="/project/:id" element={<ProjectDetail key={window.location.pathname}/>} />
       </Routes>
     </BrowserRouter>
   );

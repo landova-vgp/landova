@@ -73,13 +73,15 @@
 /* Title */
 .project-title {
   line-height: 1.55;
-  font-size: 16px;
+  font-size: 13.5px;
   font-weight: 400;
   margin: 0 32px 0 0;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #fff;
+  color: #dcdcdc;
   transition: text-decoration 0.3s;
+  letter-spacing: 0.0105px;
+  line-height: 22.4px;
 }
 
 .project-title small {
@@ -95,8 +97,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.8rem;
-  color: #777;
+  color: #aeaeae;
   line-height: 1.8;
+  letter-spacing: 0.0105px;
 }
 
 .project-details {
@@ -241,6 +244,17 @@
     width: 347px;
     height: auto;
   }
+
+  .project-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .project-arrow {
+    right: -8px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -259,5 +273,16 @@
   .project-image img {
     width: 295px;
     height: auto;
+  }
+
+  .project-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .project-arrow {
+    right: -10px;
   }
 }
