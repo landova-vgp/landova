@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/landova/static/css/main.60599cdc.css",
-    "main.js": "/landova/static/js/main.6125c15b.js",
+    "main.js": "/landova/static/js/main.4ab12d79.js",
     "static/media/DSC03727.jpg": "/landova/static/media/DSC03727.4f85153167302205acad.jpg",
     "static/media/DSC03731.jpg": "/landova/static/media/DSC03731.bc683de827ee56f57f8e.jpg",
     "static/media/DSC03740.jpg": "/landova/static/media/DSC03740.135fd7290bdbb4073470.jpg",
@@ -12,6 +12,7 @@
     "static/media/DSC03739.jpg": "/landova/static/media/DSC03739.0e4d306a954a2f17baab.jpg",
     "static/media/DSC03728.jpg": "/landova/static/media/DSC03728.450cde52c8236fe0523e.jpg",
     "static/media/background.png": "/landova/static/media/background.dc8c1187c836cb435377.png",
+    "static/media/logo-red.png": "/landova/static/media/logo-red.b51b9207217dcd40efbd.png",
     "static/media/project-1.png": "/landova/static/media/project-1.f516bd0c1ad73a707aa2.png",
     "static/media/logo.png": "/landova/static/media/logo.591eb592fc4bb75f1e47.png",
     "static/media/project-001.jpeg": "/landova/static/media/project-001.85372f341b900fbc6e69.jpeg",
@@ -21,10 +22,10 @@
     "static/media/lg.woff2?io9a6k": "/landova/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/landova/index.html",
     "main.60599cdc.css.map": "/landova/static/css/main.60599cdc.css.map",
-    "main.6125c15b.js.map": "/landova/static/js/main.6125c15b.js.map"
+    "main.4ab12d79.js.map": "/landova/static/js/main.4ab12d79.js.map"
   },
   "entrypoints": [
     "static/css/main.60599cdc.css",
-    "static/js/main.6125c15b.js"
+    "static/js/main.4ab12d79.js"
   ]
 }
