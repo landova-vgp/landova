@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-red.png';
 import ContactUs from './ContactUs';
 import ProjectContent from './ProjectContent';
 import './ProjectDetail.css';
