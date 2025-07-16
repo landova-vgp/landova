@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landova/static/css/main.60599cdc.css",
-    "main.js": "/landova/static/js/main.4ab12d79.js",
+    "main.css": "/landova/static/css/main.5323d08b.css",
+    "main.js": "/landova/static/js/main.df077714.js",
     "static/media/DSC03727.jpg": "/landova/static/media/DSC03727.4f85153167302205acad.jpg",
     "static/media/DSC03731.jpg": "/landova/static/media/DSC03731.bc683de827ee56f57f8e.jpg",
     "static/media/DSC03740.jpg": "/landova/static/media/DSC03740.135fd7290bdbb4073470.jpg",
@@ -14,18 +14,18 @@
     "static/media/background.png": "/landova/static/media/background.dc8c1187c836cb435377.png",
     "static/media/logo-red.png": "/landova/static/media/logo-red.b51b9207217dcd40efbd.png",
     "static/media/project-1.png": "/landova/static/media/project-1.f516bd0c1ad73a707aa2.png",
-    "static/media/logo.png": "/landova/static/media/logo.591eb592fc4bb75f1e47.png",
+    "static/media/founder.jpeg": "/landova/static/media/founder.237d136f4e352295322a.jpeg",
     "static/media/project-001.jpeg": "/landova/static/media/project-001.85372f341b900fbc6e69.jpeg",
     "static/media/lg.svg?io9a6k": "/landova/static/media/lg.09cd8e9be7081f216644.svg",
     "static/media/lg.woff?io9a6k": "/landova/static/media/lg.356a0e9cb064c7a196c6.woff",
     "static/media/lg.ttf?io9a6k": "/landova/static/media/lg.747d038541bfc6bb8ea9.ttf",
     "static/media/lg.woff2?io9a6k": "/landova/static/media/lg.64b800aa30714fd916dc.woff2",
     "index.html": "/landova/index.html",
-    "main.60599cdc.css.map": "/landova/static/css/main.60599cdc.css.map",
-    "main.4ab12d79.js.map": "/landova/static/js/main.4ab12d79.js.map"
+    "main.5323d08b.css.map": "/landova/static/css/main.5323d08b.css.map",
+    "main.df077714.js.map": "/landova/static/js/main.df077714.js.map"
   },
   "entrypoints": [
-    "static/css/main.60599cdc.css",
-    "static/js/main.4ab12d79.js"
+    "static/css/main.5323d08b.css",
+    "static/js/main.df077714.js"
   ]
 }
