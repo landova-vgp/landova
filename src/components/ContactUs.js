@@ -8,15 +8,16 @@ const ContactUs = () => {
         <h2 className="site-foot__title">Contact us</h2>
 
         <a href="mailto:info@refuel.cz" className="site-foot__email">
-          email@to-be-added.com
+          landovavgp@gmail.com
         </a>
 
         <div className="site-foot__cols">
           <address className="site-foot__cols__item">
             <b>Corporate Office</b>
-            VGP Square, Dharmaraja Koil Street,<br />
+            VGP Square (4th Floor),<br />
+            6, Dharmaraja Kovil St,<br />
             Saidapet, Chennai – 600015.<br />
-            +91 98410 57957
+            +91 99405 57957
           </address>
 
           <address className="site-foot__cols__item">

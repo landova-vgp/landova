@@ -130,25 +130,27 @@ const ProjectDetail = () => {
                 <img
                   src={photo}
                   alt={`Project ${index + 1}`}
-                  style={{ width: '100%', marginBottom: '20px', cursor: 'pointer' }}
+                  style={{ width: '100%', marginBottom: '8px', cursor: 'pointer' }}
                 />
               </a>
             ))}
           </LightGallery>
+
+          <iframe
+            src="https://www.google.com/maps?q=12.741042,80.180130&hl=en&z=15&output=embed"
+            width="100%"
+            height="500"
+            style={{ border: 0, borderRadius: '8px', marginTop: '40px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Map of Thiruporur"
+          />
         </div>
       </section>
 
       <div className="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.090785762338!2d80.1801303740302!3d12.74104278756895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f592476fdc01%3A0x7e9913b0f6e3ce3!2sThiruporur%2C%20Tamil%20Nadu%20603110!5e0!3m2!1sen!2sin!4v1720771690642!5m2!1sen!2sin"
-          width="100%"
-          height="500"
-          style={{ border: 0, borderRadius: '8px', marginTop: '40px' }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Map of Thiruporur"
-        />
+
       </div>
 
       <div id="project-contact">

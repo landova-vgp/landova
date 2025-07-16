@@ -1,5 +1,5 @@
 .project-detail-page {
-  color: white;
+  color: #cbcbcb;;
   background-color: black;
 }
 
@@ -13,7 +13,7 @@
 
 .logo {
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 4%;
   width: auto;
   height: 180px;
@@ -26,7 +26,7 @@
   right: 4%;
   z-index: 10;
   font-size: 14px;
-  color: #ffffff;
+  color: #242424;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -38,18 +38,18 @@
 }
 
 .detail-project__hero-text .hero-line-1 {
-    margin: 0 0 45px;
+    margin: 0px 0 45px;
     letter-spacing: .16em;
     font-weight: 700;
     font-size: 15px;
-    color: #ffffff;
+    color: #414141;
     line-height: 1.8;
 }
 
 .detail-project__hero-text .hero-line-2 {
     margin: 0;
     font-weight: 700;
-    color: #ffffff;
+    color: #414141;
     line-height: 1.25;
     font-size: 48px;
 }
@@ -57,8 +57,8 @@
 .detail-project__hero-text .hero-line-3 {
     margin: 4px 0 0;
     line-height: 1.8;
-    color: #c6c6c6;
-    font-size: 16px;
+    color: #636363;
+    font-size: 14px;
 }
 
 /* MAIN CONTENT BELOW HERO */
@@ -205,9 +205,9 @@
 
 @media (max-width: 1024px) {
  .logo {
-    left: 30px !important;
+    left: 19px !important;
     top: 34px !important;
-    height: 100px !important;
+    height: 65px !important;
   }
   .footer-text {
     padding: 48px 4%;

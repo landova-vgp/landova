@@ -15,7 +15,7 @@
   top: 0px;
   left: 10px;
   right: 0.5%;
-  padding: 0 20px;
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,17 +24,22 @@
 
 .logo {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 4%;
     width: auto;
     height: 180px;
 }
 
 .center-text p {
-  font-size: 1.4rem;
-  line-height: 0.5;
+  line-height: 1.25;
+  font-size: 38px;
+  letter-spacing: .0007em;
   margin-bottom: 20px;
-  transform: translateY(-200px);
+  transform: translateY(30px);
+}
+
+.center-text p b {
+  font-weight: 700;
 }
 
 .slider-label {
@@ -169,6 +174,10 @@
 }
 
 @media (min-width: 1024px) {
+  .logo {
+    height: 65px;
+  }
+
   .desktop-menu-modal {
     position: fixed;
     inset: 0;
@@ -236,7 +245,15 @@
 @media (max-width: 1024px) {
   .center-text p {
     transform: translateY(-70px);
-    font-size: 1rem;
+    line-height: 1.6;
+    font-size: 28px;
+    letter-spacing: .0007em;
+  }
+}
+
+@media (min-width: 768px) {
+    .top-bar {
+    padding: 0px 25px;
   }
 }
 
@@ -338,8 +355,10 @@
   }
 
   .center-text p {
-    transform: translateY(-40px);
-    font-size: 0.78rem;
+    transform: translateY(-20px);
+    line-height: 1.6;
+    font-size: 24px;
+    letter-spacing: .0007em;
   }
 
   .nav-links a:hover {
@@ -352,10 +371,16 @@
     left: 4% !important;
   }
 
+  .center-text {
+    padding: 0 4%;
+    text-align: left;
+  }
+
   .center-text p {
-    font-size: 0.65rem;
-    line-height: 0.5;
-    transform: translateY(-40px);
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: .0007em;
+    transform: translateY(0px);
   }
 
   .hamburger {
@@ -386,6 +411,10 @@
 }
 
 @media (min-width: 321px) and (max-width: 376px) {
+  .center-text p {
+    font-size: 20px;
+  }
+
   .slider-label {
     left: 80px !important;
   }
@@ -402,6 +431,10 @@
 }
 
 @media (max-width: 320px) {
+  .center-text p {
+    font-size: 18px;
+  }
+
   .slider-label {
     left: 48px !important;
   }

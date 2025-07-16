@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Home.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-red.png';
 import Projects from '../components/Projects';
 import AboutUs from '../components/AboutUs';
 import ContactUs from './ContactUs';
@@ -74,8 +74,8 @@ useEffect(() => {
         </div>
         
         <div className="center-text">
-          <p>“My Father Bought Land from VGP… Now, I’m Buying for My Son.”</p>
-          <p>70 Years of Trust. Generations of Happy Homeowners.</p>
+          <p>“My Father Bought Land from VGP… Now, I’m Buying for My Son.”<br />
+          <b>70 Years of Trust. Generations of Happy Homeowners.</b></p>
         </div>
 
         <div className="slider-container">

@@ -20,8 +20,10 @@ ul {
   list-style: none;
   padding-left: 0; 
   font-size: 14px;
+  line-height: 1.8;
 }
 
 ul li {
   margin-bottom: 10px;
+  line-height: 1.8;
 }
