@@ -102,7 +102,7 @@ const ProjectContent = () => {
       <hr/>
 
       <h3>Directions and distances from VGP LANDOVA site at Nellikuppam village to nearby locations</h3>
-      <p><strong>1. Guduvanchery ➝ Nadhivaram ➝ Nellikuppam</strong><br />
+      {/* <p><strong>1. Guduvanchery ➝ Nadhivaram ➝ Nellikuppam</strong><br />
         <strong>Distance:</strong> 13.2 km<br />
         <strong>Travel Time:</strong> 23 minutes<br />
         <strong>Route:</strong> Guduvanchery ➝ Nadhivaram ➝ Kandigai ➝ Vandalur–Kelambakkam Road ➝ Nellikuppam
@@ -117,7 +117,7 @@ const ProjectContent = () => {
         <strong>Distance:</strong> 10.4 km<br />
         <strong>Travel Time:</strong> 19 minutes<br />
         <strong>Route:</strong> Nellikuppam ➝ Pudupakkam ➝ Kelambakkam ➝ Thiruporur
-      </p>
+      </p> */}
     </div>
   );
 };

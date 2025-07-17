@@ -2,7 +2,7 @@ body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Mirai', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Mirai', 'Poppins', 'Arial', 'Helvetica', sans-serif;
   overflow-x: hidden;
   background-color: black;
 }

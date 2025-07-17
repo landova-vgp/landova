@@ -4,6 +4,8 @@ import logo from '../assets/logo-red.png';
 import ContactUs from './ContactUs';
 import ProjectContent from './ProjectContent';
 import Proximity from './Proximity';
+import EnquiryForm from './EnquiryForm';
+
 import './ProjectDetail.css';
 import './Home.css'; // for shared hamburger menu styles
 
@@ -32,6 +34,7 @@ const ProjectDetail = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState('');
   const [mapModalOpen, setMapModalOpen] = useState(false);
+  const [formModalOpen, setFormModalOpen] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 1200);
@@ -112,6 +115,18 @@ const ProjectDetail = () => {
         <div className="detail-project__col--align-left">
           <ProjectContent />
           <Proximity />
+          <button
+            onClick={() => setFormModalOpen(true)}
+            className="button item---list__more enquiry-trigger-btn"
+            style={{ marginTop: '16px', marginBottom: '16px' }}
+          >
+            <i className="about-us-arrow" aria-hidden="true">
+              <svg width="9" height="13" viewBox="0 0 9 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 6.5L1 12" stroke="white" strokeWidth="2" fill="none" />
+              </svg>
+            </i>
+            <span>Enquire Now</span>
+          </button>
         </div>
 
         <div className="detail-project__col--align-right">
@@ -144,16 +159,16 @@ const ProjectDetail = () => {
             onClick={() => setMapModalOpen(true)}
             style={{ position: 'relative', cursor: 'pointer' }}
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5503.512935344967!2d80.10823688938203!3d12.741365241624779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ0JzI1LjIiTiA4MMKwMDYnNDYuNCJF!5e0!3m2!1sen!2sin!4v1752745487360!5m2!1sen!2sin"
-              width="100%"
-              height="500"
-              style={{ border: 0, borderRadius: '8px', pointerEvents: 'none' }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="VGP Landova Project Location"
-            />
+           <iframe
+            src="https://maps.google.com/maps?q=12.741365241624779,80.10823688938203&z=16&output=embed"
+            width="100%"
+            height="500"
+            style={{ border: 0, borderRadius: '8px', pointerEvents: 'none' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="VGP Landova Project Location"
+          />
             <div className="map-overlay-text">Click to view fullscreen</div>
           </div>
 
@@ -172,11 +187,11 @@ const ProjectDetail = () => {
         <div className="map-modal-overlay" onClick={() => setMapModalOpen(false)}>
           <div className="map-modal-content" onClick={(e) => e.stopPropagation()}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5503.512935344967!2d80.10823688938203!3d12.741365241624779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ0JzI1LjIiTiA4MMKwMDYnNDYuNCJF!5e0!3m2!1sen!2sin!4v1752745487360!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=12.741365241624779,80.10823688938203&z=16&output=embed"
               width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
+              height="500"
+              style={{ border: 0, borderRadius: '8px', pointerEvents: 'none' }}
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="VGP Landova Project Location"
@@ -185,6 +200,11 @@ const ProjectDetail = () => {
           </div>
         </div>
       )}
+
+      {formModalOpen && (
+        <EnquiryForm onClose={() => setFormModalOpen(false)} />
+      )}
+
     </div>
 
   );

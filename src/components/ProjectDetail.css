@@ -135,6 +135,32 @@
   animation: spin 1s ease-in-out infinite;
 }
 
+.button.item---list__more {
+  display: inline-block;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 10px 0px;
+  border: none;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.button.item---list__more span {
+  text-decoration: underline;       
+}
+
+.button.item---list__more:hover {
+  padding-left: 36px;
+}
+
+.button.item---list__more.disabled,
+.button.item---list__more:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -298,6 +324,10 @@
 
     .detail-project__hero-text .hero-line-3 {
         font-size: 13px;
+    }
+
+    .button.item---list__more span {
+      font-size: 16px !important;    
     }
 
     .footer {

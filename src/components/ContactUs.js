@@ -8,7 +8,7 @@ const ContactUs = () => {
         <h2 className="site-foot__title">Contact us</h2>
 
         <a href="mailto:info@refuel.cz" className="site-foot__email">
-          landovavgp@gmail.com
+          <b>landovavgp@gmail.com</b>
         </a>
 
         <div className="site-foot__cols">
