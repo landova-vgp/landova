@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import logo from '../assets/logo-red.png';
 import ContactUs from './ContactUs';
 import ProjectContent from './ProjectContent';
+import Proximity from './Proximity';
 import './ProjectDetail.css';
 import './Home.css'; // for shared hamburger menu styles
 
@@ -30,6 +31,7 @@ const ProjectDetail = () => {
   const [loading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState('');
+  const [mapModalOpen, setMapModalOpen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 1200);
@@ -109,6 +111,7 @@ const ProjectDetail = () => {
       <section className="detail-project__content">
         <div className="detail-project__col--align-left">
           <ProjectContent />
+          <Proximity />
         </div>
 
         <div className="detail-project__col--align-right">
@@ -136,16 +139,24 @@ const ProjectDetail = () => {
             ))}
           </LightGallery>
 
-          <iframe
-            src="https://www.google.com/maps?q=12.741042,80.180130&hl=en&z=15&output=embed"
-            width="100%"
-            height="500"
-            style={{ border: 0, borderRadius: '8px', marginTop: '40px' }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Map of Thiruporur"
-          />
+          <div
+            className="map-thumbnail"
+            onClick={() => setMapModalOpen(true)}
+            style={{ position: 'relative', cursor: 'pointer' }}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5503.512935344967!2d80.10823688938203!3d12.741365241624779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ0JzI1LjIiTiA4MMKwMDYnNDYuNCJF!5e0!3m2!1sen!2sin!4v1752745487360!5m2!1sen!2sin"
+              width="100%"
+              height="500"
+              style={{ border: 0, borderRadius: '8px', pointerEvents: 'none' }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="VGP Landova Project Location"
+            />
+            <div className="map-overlay-text">Click to view fullscreen</div>
+          </div>
+
         </div>
       </section>
 
@@ -156,7 +167,26 @@ const ProjectDetail = () => {
       <div id="project-contact">
         <ContactUs />
       </div>
+
+      {mapModalOpen && (
+        <div className="map-modal-overlay" onClick={() => setMapModalOpen(false)}>
+          <div className="map-modal-content" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5503.512935344967!2d80.10823688938203!3d12.741365241624779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ0JzI1LjIiTiA4MMKwMDYnNDYuNCJF!5e0!3m2!1sen!2sin!4v1752745487360!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="VGP Landova Project Location"
+            />
+            <button className="map-modal-close" onClick={() => setMapModalOpen(false)}>×</button>
+          </div>
+        </div>
+      )}
     </div>
+
   );
 };
 

@@ -1,5 +1,40 @@
+p {
+  color: #fff;
+}
+
+.spinner {
+  text-align: center;
+  padding: 150px 0;
+}
+
+.spinner:after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top-color: #535353;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .about-us {
     border-top: 1px solid #2d2e2d;
+}
+
+.about-landova {
+  margin-top: 100px;
+}
+
+.about-landova-header {
+  height: auto;
+  position: relative;
 }
 
 .founder {
@@ -15,6 +50,7 @@
 .founder p {
   margin: 0 !important;
   align-self: flex-start;
+  color: #fff;
 }
 
 .about-us-image {
@@ -56,6 +92,13 @@
 .site-section__subhead {
     margin: 23px 0 0;
     color: #fff;
+}
+
+.site-section__subhead__landova {
+    margin: 40px 0 0;
+    padding-top: 40px;
+    color: #fff;
+    border-top: 1px solid #2d2e2d;
 }
 
 .about-us p {

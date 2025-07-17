@@ -1,13 +1,27 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect }from 'react';
 import './AboutUs.css';
 import aboutImage from '../assets/founder.jpeg';
+import Header from './Header';
+import ContactUs from './ContactUs';
 
-const AboutUs = () => {
-   const navigate = useNavigate();
+const AboutLandova = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 100);
+  }, []);
+
+  if (loading) {
+    return <div className="spinner" />;
+  }
 
   return (
-    <section className="about-us" id="about">
+    <>
+    <section className='about-landova-header'>
+      <Header />
+    </section>
+
+    <section className="about-landova" id="about">
       <div className="site-section__inset" id="about">
         <header className="site-section__head" style={{ marginBottom: 0 }}>
             <h2 className="site-section__title --like-h6">ABOUT US</h2>
@@ -28,33 +42,47 @@ const AboutUs = () => {
               </p>
             </div>
 
-            <Link to="/about-landova" className="button item---list__more">
-              <i className="about-us-arrow" aria-hidden="true">
-                <svg width="9" height="13" viewBox="0 0 9 13" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 1L7 6.5L1 12" stroke="white" strokeWidth="2" fill="none" />
-                </svg>
-              </i>
-              <span>Read out more</span>
-            </Link>
+            <p className="site-section__subhead__landova"><strong>What does LANDOVA mean?</strong></p>
 
-            {/* <button
-              className="button item---list__more"
-              onClick={() => {
-                navigate('/about-landova');
-                setTimeout(() => window.scrollTo(0, 0), 0);
-              }}
-            >
+            <p>
+            The name LANDOVA is inspired by the Slavic word “land”, meaning “earth or land,” and the suffix “ova,” which denotes belonging or origin.
+            </p>
+
+            <p>LAND + OVA = “Belonging to the Land”</p>
+
+            <p className="about-highlights">It reflects:<br />
+                Ownership – Every plot belongs to you with pride<br />
+                Roots – A strong connection to the earth<br />
+                Legacy – A place that stays in your family for generations<br />
+            </p>
+
+            <blockquote className="about-quote">
+              “LANDOVA means more than just buying a plot – it means owning a piece of the future, with pride and purpose.”
+            </blockquote>
+
+            <br/>
+
+            <p><strong><center>Don’t miss the chance to own your dream plot!</center></strong></p><br/><br/>
+
+            <p>Project brochure and full details are attached for your reference.</p>
+
+            <button className="button item---list__more">
                 <i className="about-us-arrow" aria-hidden="true">
                     <svg width="9" height="13" viewBox="0 0 9 13" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L7 6.5L1 12" stroke="white" strokeWidth="2" fill="none" />
                     </svg>
                 </i>
-            <span>Read out more</span>
-            </button> */}
+            <span>Download Brochure</span>
+            </button>
         </header>
       </div>
     </section>
+
+    <div id="project-contact">
+        <ContactUs />
+    </div>
+    </>
   );
 };
 
-export default AboutUs;
+export default AboutLandova;

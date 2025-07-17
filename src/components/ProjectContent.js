@@ -17,6 +17,9 @@ const ProjectContent = () => {
       <strong>Advance Booking:</strong> ₹1,00,000 only<br />
       <strong>Loan Available:</strong> LIC Housing Finance & YES Bank</p>
 
+      <p><strong>Special Launch Offer:</strong><br />
+        Starting from just ₹2,200 per Sq.Ft.* for select units. Limited-time pricing—ideal for early investors looking to maximize appreciation.</p>
+
       <hr/>
 
       <h3>VGP LANDOVA – Invest in Keelur, the Fast-Growing Zone Between OMR & GST!</h3>
@@ -41,6 +44,9 @@ const ProjectContent = () => {
         Clear Title & Immediate Registration<br />
       </p>
 
+      <p><strong>Own with Just 25% Down Payment!</strong><br />
+      Thanks to our Easy Installment Plan, owning land is now as easy as paying monthly rent. Pay just 25% upfront and finance the rest over a tenure of up to 15 years with interest rates from 10.5% p.a. A 636 Sq.Ft. plot (approx. ₹14,00,000) can be yours at an EMI of ₹11,250/month—perfect for salaried professionals and first-time buyers.</p>
+
       <br/>
 
       <hr/>
@@ -57,9 +63,15 @@ const ProjectContent = () => {
         Only ₹2,575/- per Sq.Ft.<br />
       </p>
 
+      <p>Additional features include complete drainage infrastructure, LED street lighting, clearly numbered plots, and groundwater access at just 80 feet depth—making these plots fully ready for construction from day one.</p>
+
       <p><strong>Registration & Document Charges Extra</strong> as per Government Guideline Value & Stamp Duty.<br />
       80% Bank Loan Available<br />
       Immediate Registration & Clear Titles</p>
+
+      <p><strong>Tailored for Every Buyer:</strong> Whether you’re an NRI looking for long-term security, a young family planning your dream home, or an investor seeking strong rental returns, LANDOVA has something for everyone.</p>
+
+      <p><strong>Brand Legacy:</strong> Brought to you by the trusted VGP Group—known for landmarks like VGP Golden Beach and Universal Kingdom—LANDOVA is your gateway to a secure, high-value land investment. <em>Your Land, Your Legacy.</em></p>
 
       <hr/>
 
@@ -82,7 +94,7 @@ const ProjectContent = () => {
       </ul>
 
       <p><strong>Emerging Challenges:</strong></p>
-      <p>Long-term residents note growing pains: patchy sewage systems, incomplete drainage, and traffic during temple events  ￼. Public transport is still evolving.</p>
+      <p>Long-term residents note growing pains: patchy sewage systems, incomplete drainage, and traffic during temple events. Public transport is still evolving.</p>
 
       <p><strong>Summary</strong></p>
       <p>Thiruporur is transitioning fast—from farmland to a suburban extension supporting Chennai’s booming tech-driven sprawl. Its appeal lies in urban connectivity, improving roads, Metro prospects, and organized new projects. While infrastructure still plays catch-up, the growth trajectory suggests property values are likely to keep climbing—making it a compelling spot for both end-users and investors.</p>
@@ -91,20 +103,20 @@ const ProjectContent = () => {
 
       <h3>Directions and distances from VGP LANDOVA site at Nellikuppam village to nearby locations</h3>
       <p><strong>1. Guduvanchery ➝ Nadhivaram ➝ Nellikuppam</strong><br />
-        • <strong>Distance:</strong> 13.2 km<br />
-        • <strong>Travel Time:</strong> 23 minutes<br />
-        • <strong>Route:</strong> Guduvanchery ➝ Nadhivaram ➝ Kandigai ➝ Vandalur–Kelambakkam Road ➝ Nellikuppam
+        <strong>Distance:</strong> 13.2 km<br />
+        <strong>Travel Time:</strong> 23 minutes<br />
+        <strong>Route:</strong> Guduvanchery ➝ Nadhivaram ➝ Kandigai ➝ Vandalur–Kelambakkam Road ➝ Nellikuppam
       </p>
       
       <p><strong>2. Nellikuppam ➝ Kottamedu</strong><br />
-        • <strong>Distance:</strong> 4.1 km<br />
-        • <strong>Travel Time:</strong> 9 minutes<br />
-        • <strong>Route:</strong> Nellikuppam ➝ Local internal village road ➝ Kottamedu
+        <strong>Distance:</strong> 4.1 km<br />
+        <strong>Travel Time:</strong> 9 minutes<br />
+        <strong>Route:</strong> Nellikuppam ➝ Local internal village road ➝ Kottamedu
       </p>
       <p><strong>3. Nellikuppam ➝ Thiruporur</strong><br />
-        • <strong>Distance:</strong> 10.4 km<br />
-        • <strong>Travel Time:</strong> 19 minutes<br />
-        • <strong>Route:</strong> Nellikuppam ➝ Pudupakkam ➝ Kelambakkam ➝ Thiruporur
+        <strong>Distance:</strong> 10.4 km<br />
+        <strong>Travel Time:</strong> 19 minutes<br />
+        <strong>Route:</strong> Nellikuppam ➝ Pudupakkam ➝ Kelambakkam ➝ Thiruporur
       </p>
     </div>
   );

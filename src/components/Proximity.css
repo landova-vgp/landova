@@ -1,0 +1,60 @@
+.project-info-collapsible {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #cbcbcb;
+}
+
+.project-info-collapsible details {
+  border-top: 1px solid #444;
+  padding: 14px 0;
+  cursor: pointer;
+}
+
+.project-info-collapsible summary {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-info-collapsible summary::after {
+  content: '+';
+  font-size: 18px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.project-info-collapsible details[open] summary::after {
+  content: '−';
+}
+
+.project-info-collapsible p {
+  margin: 8px 0 0 10px;
+  line-height: 1.6;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 4px 10px;
+  margin-top: 6px;
+  line-height: 1.6;
+  color: #cbcbcb;
+}
+
+.info-row span:first-child {
+  flex: 1;
+  padding-right: 10px;
+  white-space: normal;
+}
+
+.info-row span:last-child {
+  white-space: nowrap;
+  min-width: 70px;
+  text-align: right;
+}
+
